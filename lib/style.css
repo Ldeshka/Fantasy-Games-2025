@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  background-color: #1a1a2e;
+  color: white;
+  font-family: sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  color: #bfc0c0;
+  font-size: 40px;
+}
+
+header h1::first-letter {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+}
+
+header p {
+  text-align: center;
+  color: #c7a008;
+}
+
+nav {
+  background-color: #0f3460;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c7a008;
+  font-weight: bold;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+.hero {
+  margin-top: 130px;
+  text-align: center;
+  color: #c7a008;
+}
+
+.heroes,
+.faculties {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.HC,
+.FC {
+  background-color: #16213e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.HC img,
+.FC img {
+  width: 130px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.HC img:hover,
+.FC img:hover {
+  transform: scale(1.1);
+}
+
+.HC p,
+.FC p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #c7a008;
+}
+
+.gryffindor-details,
+.slytherin-details,
+.ravenclaw-details,
+.hufflepuff-details {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.house-img {
+  width: 200px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+main h2 {
+  text-align: center;
+  color: #c7a008;
+  font-size: 30px;
+  margin-top: 90px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  --color1: #c7a008;
+  --color2: #a58505;
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn::before {
+  content: '';
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+.btn::after {
+  content: '';
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+.btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+}
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 450px;
+  margin-right: 55px;
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+.victh3 {
+  text-align: center;
+  color: #c7a008;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+
+
