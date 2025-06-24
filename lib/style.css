@@ -240,6 +240,24 @@ html {
   outline: none;
 }
 
+.pers{
+
+  text-align: center;
+ 
+
+}
+
+.perss{
+
+  width: 50%;
+  margin-left: 500px;
+}
+
+.pesss{
+
+  margin-bottom: 30px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn-donate {
     transition: linear;
@@ -252,6 +270,3 @@ html {
   font-size: 30px;
   margin-top: 0px;
 }
-
-
-
